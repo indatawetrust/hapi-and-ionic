@@ -59,14 +59,14 @@ angular.module('app.controllers', ['app.factory.user'])
          },1000)
         break;
         case 'account_create':
-         var alertPopup = $ionicPopup.alert({
+         var popup = $ionicPopup.alert({
            title    : 'account created',
            template : null,
            buttons  : []
          })
 
          $timeout(function(){
-            alertPopup.close()
+            popup.close()
             $state.go('app.signin')
          },500)
         break;
