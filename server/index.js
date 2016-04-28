@@ -12,7 +12,7 @@ import jwt      from 'hapi-auth-jwt2'
 /*
  * db
  */
-mongoose.connect('mongodb://localhost/words',(err) => {
+mongoose.connect('mongodb://localhost/sample',(err) => {
 	if(err) throw err
 })
 
