@@ -1,0 +1,17 @@
+<ion-view view-title="sign in">
+  <ion-content>
+    <div class="list">
+	  <label class="item item-borderless item-input">
+	    <input type="text" ng-model="form.username" placeholder="username">
+	  </label>
+	  <label class="item item-borderless item-input">
+	    <input type="password" ng-model="form.password" placeholder="password">
+	  </label>
+	  <label class="item item-borderless item-input">
+	  	<button class="button button-positive" ng-click="signin()" ng-disabled="(form.username == undefined || (form.username.length < 3 || form.username.length > 15)) || (form.password == undefined || (form.password.length < 4 || form.password.length > 15))">
+	      sign in
+	    </button>
+	  </label>
+	</div>
+  </ion-content>
+</ion-view>
